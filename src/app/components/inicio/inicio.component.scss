@@ -1,0 +1,148 @@
+@media screen and (min-width: 1020px) {
+  .apresetation-section {
+    width: 90%;
+    height: 45vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.apresetation-section {
+  margin: 2rem auto 3rem;
+  width: clamp(30rem, 90%, 76.7rem);
+}
+
+  //first div
+@media screen and (min-width: 1020px) {
+  .container-title-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 31vw;
+  }
+}
+
+.container-title-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 25vh;
+}
+
+@media screen and (min-width: 1020px) {
+  .apresetation-section h1 {
+    width: clamp(22rem, 60vw, 24rem);
+    font-size: 3.6rem;
+  }
+}
+
+.apresetation-section h1 {
+  color: var(--white);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+//H3
+@media screen and (min-width: 1020px) {
+  .apresetation-section h3 {
+    font-size: 1.8rem;
+    width: 25rem;
+    text-align: left;
+  }
+}
+
+.apresetation-section h3 {
+  color: var(--dark-40);
+  font-size: 1.6rem;
+  width: 25rem;
+  text-align: center;
+}
+
+//BUTON 1
+@media screen and (min-width: 1020px) {
+  .container-title-btns div button {
+    height: 4.2rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+}
+
+.container-title-btns div>button {
+  width: clamp(10rem, 45%, 20rem);
+  height: 3rem;
+  font-family: DM Sans;
+  font-weight: 500;
+  color: var(--white);
+}
+
+@media screen and (min-width: 1020px) {
+  .download-cv-btn {
+    width: 14.3rem;
+    color: var(--white);
+  }
+}
+
+.download-cv-btn {
+  background-color: var(--brand-color);
+  border: none;
+  font-size: 1.3rem;
+}
+
+//BUTON 2
+@media screen and (min-width: 1020px) {
+  .container-title-btns div button {
+    height: 4.2rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+}
+
+.container-title-btns div>button {
+  width: clamp(10rem, 45%, 20rem);
+  height: 3rem;
+  font-family: DM Sans;
+  font-weight: 500;
+  color: var(--white);
+}
+
+@media screen and (min-width: 1020px) {
+  .contact-btn {
+    width: 15.7rem;
+  }
+}
+
+.contact-btn {
+  background-color: var(--dark-10);
+  border: .697px solid #333;
+  font-size: 1.3rem;
+}
+
+.contact-btn>a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+@media screen and (min-width: 1020px) {
+  .imagem {
+    min-height: 24vw;
+    max-height: 30vw;
+    min-width: 25vw;
+    max-width: 30vw;
+    background-image: url(/assets/imgHome.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+
+
+
