@@ -1,0 +1,16 @@
+/* app-header.component.css ou estilo global */
+app-header {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f8f9fa;
+  z-index: 1000;
+}
+
+/* app-inicio.component.css ou estilo global */
+app-inicio {
+  margin-top: 60px;
+  display: block;
+}
