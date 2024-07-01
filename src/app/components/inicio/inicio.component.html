@@ -1,12 +1,34 @@
 <section id="inicio">
   <img src="./assets/img3.png" alt="Banner" id="banner" class="img-fluid">
   <div class="container-fluid">
-<!--    <div class="imagen">-->
-<!--    </div>-->
     <div class="row">
       <div class="col-md-12 info">
-        <h1>Lucas Alan Kuhn</h1>
-        <p>Desenvolvedor full stack</p>
+<!--            ICONES REDES SOCIAIS-->
+        <div class="col lado-izq">
+          <div class="redes-link">
+            <a class="icon icon-github" href="https://github.com/LucasAKuhn" target="_blank">
+              <fa-icon [icon]="faGithub"></fa-icon>
+            </a>
+            <a class="icon icon-linkedin" href="https://linkedin.com/in/lucasalankuhn"
+               target="_blank">
+              <fa-icon [icon]="faLinkedin"></fa-icon>
+            </a>
+            <a class="icon icon-facebook" href="https://www.facebook.com/lucas.kuhn.1238/" target="_blank">
+              <fa-icon [icon]="faFacebook"></fa-icon>
+            </a>
+          </div>
+        </div>
+<!--            TEXTO APRESENTACAO-->
+        <div>
+          <h1>Lucas Alan Kuhn</h1>
+          <p>Desenvolvedor full stack</p>
+        </div>
+
+<!--        BOTAO DOWNLOAD CV-->
+        <div class="button-CV">
+          <button (click)="downloadCv()" class="download-cv-btn">Download CV</button>
+        </div>
+
       </div>
     </div>
   </div>
