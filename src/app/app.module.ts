@@ -8,6 +8,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SobreComponent } from './components/sobre/sobre.component';
+import { ProjetosComponent } from './components/projetos/projetos.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SobreComponent } from './components/sobre/sobre.component';
     HeaderComponent,
     PortfolioComponent,
     InicioComponent,
-    SobreComponent
+    SobreComponent,
+    ProjetosComponent
   ],
   imports: [
     BrowserModule,
