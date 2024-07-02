@@ -7,13 +7,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SobreComponent } from './components/sobre/sobre.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     PortfolioComponent,
-    InicioComponent
+    InicioComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
