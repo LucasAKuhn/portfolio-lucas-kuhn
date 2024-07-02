@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class SobreComponent {
 
+  downloadCv() {
+    window.open('./assets/Curriculum-Lucas-Kuhn.pdf', '_blank');
+  }
+
 }
