@@ -1,0 +1,236 @@
+#proyectos {
+  height: 100vh;
+  width: 100vw;
+  background: #232323;
+  color: #fff;
+  font-family: 'Cairo', sans-serif;
+}
+
+.proyectos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.proyectos-cards-container {
+  position: relative;
+  top: 5em;
+  overflow: hidden;
+  padding-left: 2%;
+  padding-right: 2%;
+  box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, .5);
+  padding-top: 0.62em;
+  background-color: rgba(48, 47, 47, 0.3);
+}
+
+.proyecto-card {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 1em;
+  overflow: hidden;
+  height: 270px;
+  margin-bottom: 2em;
+  list-style: none;
+  list-style-type: none;
+  text-align: center;
+  -webkit-backdrop-filter: blur(1em);
+  backdrop-filter: blur(1em);
+  background-color: #0000004d;
+  border-right: 1px solid rgba(255, 255, 255, .5);
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  transition: all .3s;
+}
+
+.proyecto-card:hover {
+  border: 1px solid #D9A0BB;
+  transform: scale(1.1);
+}
+
+.swiper-pagination-bullet {
+  background: #f3f3f3;
+}
+
+.swiper-pagination-bullet-active {
+  background: #D9A0BB;
+}
+
+.proyecto-header {
+  height: 140px;
+  transition: all 1s;
+  max-width: 100%;
+}
+
+.proyecto-header>img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.proyecto-contenido {
+  background-color: #313131;
+  padding: 10px 6px;
+}
+
+.nombre {
+  letter-spacing: 2px;
+  font-size: 1em;
+}
+
+.descripcion {
+  font-size: .7em;
+  margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 480px) {
+  #proyectos {
+    margin-top: -4em;
+    height: max-content;
+    padding-bottom: 8em;
+  }
+
+  .proyectos-cards-container {
+    top: 3em;
+  }
+
+  .proyecto-card:hover {
+    transform: none;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+  #proyectos {
+    margin-top: -4em;
+    height: max-content;
+    padding-bottom: 8em;
+  }
+
+  .proyectos-cards-container {
+    top: 2em;
+  }
+}
+
+
+//ADICIONANDO
+.swiper-pointer-events {
+  touch-action: pan-y;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: 10px;
+  left: auto;
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 80%;
+  top: .3em;
+}
+
+
+.buttons{
+  left: 75%;
+}
+
+
+//RESOLVERAM O PROBLEMA
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.swiper-backface-hidden .swiper-slide {
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+//CSS FALTANTE
+
+    //BUTTON
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: 10px;
+  right: auto;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: 'prev';
+}
+
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-family: swiper-icons;
+  font-size: 44px;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: 'next';
+}
+
+
+

@@ -8,7 +8,9 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SobreComponent } from './components/sobre/sobre.component';
-import { ProjetosComponent } from './components/projetos/projetos.component';
+import { ProyectosComponent } from './components/projetos/proyectos.component';
+import { SwiperModule } from 'swiper/angular';
+
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { ProjetosComponent } from './components/projetos/projetos.component';
     PortfolioComponent,
     InicioComponent,
     SobreComponent,
-    ProjetosComponent
+    ProyectosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    SwiperModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
