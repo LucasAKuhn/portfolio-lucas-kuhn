@@ -3,6 +3,7 @@ id?: number;
 nome: string;
 descricao: string;
 img: string;
+git?: string;
 
 constructor(nome: string, descricao: string, img: string){
     this.nome = nome;

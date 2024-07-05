@@ -59,57 +59,24 @@ export class ProjetosComponent {
   projetos: Projetos[] = [
     {
       id: 1,
-      nome: 'Weather App',
-      descricao: 'Aplicación para consultar el clima de diferentes ciudades.',
-      img: './assets/calculadora.png',
+      nome: 'Portfólio',
+      descricao: 'Utilizando Angular, criei um portfólio pessoal, onde apresento mais sobre mim.',
+      img: './assets/portfolio.png',
+      git: 'https://github.com/LucasAKuhn/portfolio-lucas-kuhn'
     },
     {
       id: 2,
-      nome: 'TESTE',
-      descricao: 'Aplicación para consultar el clima de diferentes ciudades.',
-      img: './assets/calculadora.png',
+      nome: 'Parking Control',
+      descricao: 'Utilizando Java com Spring, criei um projeto que simula um controle de estacionamento.',
+      img: './assets/parking-control.png',
+      git: 'https://github.com/LucasAKuhn/Parking-control'
     },
     {
       id: 3,
-      nome: 'TESTE 3',
-      descricao: 'Aplicación para consultar el clima de diferentes ciudades.',
-      img: './assets/calculadora.png',
-    },
-    {
-      id: 4,
-      nome: 'TESTE4',
-      descricao: 'Aplicación para consultar el clima de diferentes ciudades.',
-      img: './assets/calculadora.png',
-    },
-    {
-      id: 5,
-      nome: '5',
-      descricao: 'Aplicación para consultar el clima de diferentes ciudades.',
-      img: './assets/calculadora.png',
-    },
-    {
-      id: 6,
-      nome: 'TESTE6',
-      descricao: 'Aplicación para consultar el clima de diferentes ciudades.',
-      img: './assets/calculadora.png',
-    },
-    {
-      id: 7,
-      nome: 'TESTE7',
-      descricao: 'Aplicación para consultar el clima de diferentes ciudades.',
-      img: './assets/calculadora.png',
-    },
-    {
-      id: 8,
-      nome: 'TESTE8',
-      descricao: 'Aplicación para consultar el clima de diferentes ciudades.',
-      img: './assets/calculadora.png',
-    },
-    {
-      id: 9,
-      nome: 'TESTE9',
-      descricao: 'Aplicación para consultar el clima de diferentes ciudades.',
-      img: './assets/calculadora.png',
+      nome: 'Be the Hero',
+      descricao: 'Construido com React / Node.JS, este projeto tem por objetivo conectar ONGs a pessoas que desejam ajudar.',
+      img: './assets/be-the-hero.png',
+      git: 'https://github.com/LucasAKuhn/Be-The-Hero--Semana-Omnistack-11'
     },
   ];
 
