@@ -1,4 +1,4 @@
-#proyectos {
+#projetos {
   height: 100vh;
   width: 100vw;
   background: #232323;
@@ -6,7 +6,7 @@
   font-family: 'Cairo', sans-serif;
 }
 
-.proyectos-container {
+.projetos-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,7 @@
   height: 100%;
 }
 
-.proyectos-cards-container {
+.projetos-cards-container {
   position: relative;
   top: 5em;
   overflow: hidden;
@@ -25,7 +25,7 @@
   background-color: rgba(48, 47, 47, 0.3);
 }
 
-.proyecto-card {
+.projeto-card {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
   border-radius: 1em;
   overflow: hidden;
@@ -42,7 +42,7 @@
   transition: all .3s;
 }
 
-.proyecto-card:hover {
+.projeto-card:hover {
   border: 1px solid #D9A0BB;
   transform: scale(1.1);
 }
@@ -55,13 +55,13 @@
   background: #D9A0BB;
 }
 
-.proyecto-header {
+.projeto-header {
   height: 140px;
   transition: all 1s;
   max-width: 100%;
 }
 
-.proyecto-header>img {
+.projeto-header>img {
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -83,29 +83,29 @@
 }
 
 @media only screen and (max-width: 480px) {
-  #proyectos {
+  #projetos {
     margin-top: -4em;
     height: max-content;
     padding-bottom: 8em;
   }
 
-  .proyectos-cards-container {
+  .projetos-cards-container {
     top: 3em;
   }
 
-  .proyecto-card:hover {
+  .projetos-card:hover {
     transform: none;
   }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px){
-  #proyectos {
+  #projetos {
     margin-top: -4em;
     height: max-content;
     padding-bottom: 8em;
   }
 
-  .proyectos-cards-container {
+  .projetos-cards-container {
     top: 2em;
   }
 }
@@ -177,20 +177,6 @@
   transition-property: transform;
 }
 
-.buttons {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  left: 80%;
-  top: .3em;
-}
-
-
-.buttons{
-  left: 75%;
-}
-
-
 //RESOLVERAM O PROBLEMA
 .swiper-slide {
   flex-shrink: 0;
@@ -232,5 +218,17 @@
   content: 'next';
 }
 
+//TITULO
+.titulo {
+  display: flex;
+  color: #f3f3f3;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  justify-content: center;
+  padding-top: 5em;
+  font-family: 'Cairo', sans-serif;
+}
 
-
+.my_swiper {
+  padding: 1.8em;
+}

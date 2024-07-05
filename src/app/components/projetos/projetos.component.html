@@ -1,0 +1,23 @@
+<section class="projetos" id="projetos">
+  <div class="projetos-container-fluid">
+    <div class="titulo">
+      <h2>Projetos:</h2>
+    </div>
+    <div class="projetos-cards-container">
+      <swiper class="projeto_cards my-swiper my_swiper" [config]="config"
+              style="--swiper-navigation-color: #D9A0BB;--swiper-pagination-color: #D9A0BB">
+        <ng-template swiperSlide class="swiper_slide swiper-slide" *ngFor="let Proyectos of proyectos">
+          <div class="projeto-card">
+            <div class="projeto-header" id="projeto-header">
+              <img src={{Proyectos.imgP}} alt="Imagen del proyecto {{Proyectos.nombreP}}">
+            </div>
+            <div class="proyecto-contenido">
+              <h3 class="nombre" id="nombre">{{Proyectos.nombreP}}</h3>
+              <p class="descripcion" id="descripcion">{{Proyectos.descripcionP}}</p>
+            </div>
+          </div>
+        </ng-template>
+      </swiper>
+    </div>
+  </div>
+</section>

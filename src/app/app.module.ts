@@ -8,7 +8,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SobreComponent } from './components/sobre/sobre.component';
-import { ProyectosComponent } from './components/projetos/proyectos.component';
+import { ProjetosComponent } from './components/projetos/projetos.component';
 import { SwiperModule } from 'swiper/angular';
 
 
@@ -19,7 +19,7 @@ import { SwiperModule } from 'swiper/angular';
     PortfolioComponent,
     InicioComponent,
     SobreComponent,
-    ProyectosComponent
+    ProjetosComponent
   ],
   imports: [
     BrowserModule,

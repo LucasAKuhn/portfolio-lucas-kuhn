@@ -15,11 +15,11 @@ SwiperCore.use([Keyboard, Pagination, Navigation, Autoplay]);
 
 @Component({
   selector: 'app-projetos',
-  templateUrl: './proyectos.component.html',
-  styleUrls: ['./proyectos.component.scss'],
+  templateUrl: './projetos.component.html',
+  styleUrls: ['./projetos.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class ProyectosComponent implements OnInit {
+export class ProjetosComponent implements OnInit {
 
   config: SwiperOptions = {
     loopedSlides: 5,
@@ -122,8 +122,8 @@ export class ProyectosComponent implements OnInit {
   faPenToSquare = faPenToSquare;
   faCirclePlus = faCirclePlus;
   faTrashCan = faTrashCan;
-  // faChevronRight = faChevronRight;
-  // faChevronLeft = faChevronLeft;
+  faChevronRight = faChevronRight;
+  faChevronLeft = faChevronLeft;
 
 
   constructor(
