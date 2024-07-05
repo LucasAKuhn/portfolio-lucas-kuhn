@@ -10,6 +10,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { ProjetosComponent } from './components/projetos/projetos.component';
 import { SwiperModule } from 'swiper/angular';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SwiperModule } from 'swiper/angular';
     PortfolioComponent,
     InicioComponent,
     SobreComponent,
-    ProjetosComponent
+    ProjetosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
