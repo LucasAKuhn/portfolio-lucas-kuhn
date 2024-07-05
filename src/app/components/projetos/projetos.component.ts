@@ -1,6 +1,10 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Projetos } from 'src/app/model/projetos';
 import SwiperCore, { Keyboard, Pagination, Navigation, Autoplay, SwiperOptions } from 'swiper';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+
+
 
 SwiperCore.use([Keyboard, Pagination, Navigation, Autoplay]);
 
@@ -10,7 +14,11 @@ SwiperCore.use([Keyboard, Pagination, Navigation, Autoplay]);
   styleUrls: ['./projetos.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class ProjetosComponent implements OnInit {
+export class ProjetosComponent {
+
+  faGithub = faGithub;
+  faLaptopCode = faLaptopCode;
+
 
   config: SwiperOptions = {
     loopedSlides: 5,
@@ -26,7 +34,7 @@ export class ProjetosComponent implements OnInit {
     pagination: {
       clickable: true
     },
-    autoplay: true,
+    autoplay: false,
     speed: 1000,
     breakpoints: {
       640: {
@@ -47,8 +55,6 @@ export class ProjetosComponent implements OnInit {
       }
     }
   }
-
-
 
   projetos: Projetos[] = [
     {
@@ -107,19 +113,7 @@ export class ProjetosComponent implements OnInit {
     },
   ];
 
-
-  constructor(
-  ) { }
-
-
-
-  ngOnInit(): void {
-  }
-
-
-
-
-
+  constructor() { }
 
 
 

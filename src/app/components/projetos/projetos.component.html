@@ -4,16 +4,41 @@
       <h2>Projetos:</h2>
     </div>
     <div class="projetos-cards-container">
-      <swiper class="projeto_cards my-swiper my_swiper" [config]="config"
+      <swiper [config]="config" class="projeto_cards my-swiper my_swiper"
               style="--swiper-navigation-color: #D9A0BB;--swiper-pagination-color: #D9A0BB">
-        <ng-template swiperSlide class="swiper_slide swiper-slide" *ngFor="let Projetos of projetos">
+        <ng-template *ngFor="let Projetos of projetos" class="swiper_slide swiper-slide" swiperSlide>
           <div class="projeto-card">
             <div class="projeto-header" id="projeto-header">
-              <img src={{Projetos.img}} alt="Imagem do projeto {{Projetos.nome}}">
+              <img alt="Imagem do projeto {{Projetos.nome}}" src={{Projetos.img}}>
             </div>
             <div class="projeto-conten">
               <h3 class="nome" id="nome">{{Projetos.nome}}</h3>
               <p class="descricao" id="descricao">{{Projetos.descricao}}</p>
+
+<!--                  //BOTOES DEPLOY E GIT-->
+<!--              <div _ngcontent-gum-c21="" class="buttons-vista">-->
+<!--                <button _ngcontent-gum-c21="">-->
+<!--                  <a _ngcontent-gum-c21="" href="https://github.com/LucasAKuhn" target="">-->
+<!--                    <fa-icon class="ng-fa-icon button" [icon]="faGithub"></fa-icon>-->
+<!--                  </a>-->
+<!--                </button>-->
+
+<!--                <button _ngcontent-gum-c21="">-->
+<!--                  <a _ngcontent-gum-c21="" href="https://github.com/LucasAKuhn" target="">-->
+<!--                    <fa-icon class="ng-fa-icon button" [icon]="faLaptopCode"></fa-icon>-->
+<!--                  </a>-->
+<!--                </button>-->
+<!--              </div>-->
+
+<!--                      SOMENTE BOTÃO GITHUB-->
+              <div _ngcontent-gum-c21="" class="buttons-vista">
+                <button _ngcontent-gum-c21="">
+                  <a _ngcontent-gum-c21="" href="https://github.com/LucasAKuhn" target="">
+                    <fa-icon class="ng-fa-icon button" [icon]="faGithub"></fa-icon>
+                  </a>
+                </button>
+              </div>
+
             </div>
           </div>
         </ng-template>
