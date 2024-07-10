@@ -49,6 +49,22 @@
   margin: 0 5% 10% 0;
 }
 
+@media only screen and (max-width: 480px) {
+  .container {
+    display: block;
+    width: 100%;
+  }
+
+  .texto {
+    width: 80%;
+  }
+
+  .foto {
+    width: 100%;
+    margin: 10% 10%;
+  }
+}
+
 #banner {
   width: 70%;
   height: 70%;

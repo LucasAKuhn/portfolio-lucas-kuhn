@@ -91,7 +91,7 @@
 
 @media only screen and (max-width: 480px) {
   #projetos {
-    margin-top: -4em;
+    //margin-top: -4em;
     height: max-content;
     padding-bottom: 8em;
   }
@@ -105,12 +105,16 @@
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px){
+
+
+@media only screen and (min-width: 481px) and (max-width: 900px){
   #projetos {
-    margin-top: -4em;
+    //margin-top: -4em;
     height: max-content;
     padding-bottom: 8em;
   }
+
+
 
   .projetos-cards-container {
     top: 2em;
