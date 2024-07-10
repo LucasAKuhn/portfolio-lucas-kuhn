@@ -11,8 +11,8 @@ export class HeaderComponent implements AfterViewInit {
       anchor.addEventListener('click', (e) => {
         e.preventDefault();
 
-        const targetId = anchor.getAttribute('href')?.substring(1); // Use optional chaining to handle potential null
-        const targetElement = document.getElementById(targetId!); // Use non-null assertion operator
+        const targetId = anchor.getAttribute('href')?.substring(1);
+        const targetElement = document.getElementById(targetId!);
 
         if (targetElement) {
           targetElement.scrollIntoView({
