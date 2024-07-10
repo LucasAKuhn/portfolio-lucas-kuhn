@@ -42,7 +42,7 @@
   height: 3px;
   width: 0;
   border-radius: 2px;
-  background-color: #D49BB0;
+  background-color: #eae1e4;
   transition: 0.4s ease;
 }
 
@@ -74,6 +74,10 @@
   .nav-item {
     font-size: 2vw;
   }
+
+  .contact {
+    font-size: 2vw;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -93,13 +97,20 @@
   }
 
   .nav-item{
-    top: .5em;
+    font-size: 1.5vw;
+  }
+
+  .contact {
     font-size: 1.5vw;
   }
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1200px){
   .nav-item{
+    font-size: 1.4vw;
+  }
+
+  .contact {
     font-size: 1.4vw;
   }
 }
