@@ -4,6 +4,7 @@ nome: string;
 descricao: string;
 img: string;
 git?: string;
+gitPage?: string;
 
 constructor(nome: string, descricao: string, img: string){
     this.nome = nome;

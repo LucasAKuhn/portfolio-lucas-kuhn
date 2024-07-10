@@ -15,7 +15,8 @@ export class InicioComponent {
   faFacebook = faFacebook;
 
   downloadCv() {
-    window.open('./assets/Curriculum-Lucas-Kuhn.pdf', '_blank');
+    // window.open('./assets/Curriculum-Lucas-Kuhn.pdf', '_blank');
+    window.open('./dist/portfolio-lucas-kuhn/assets/Curriculum-Lucas-Kuhn.pdf', '_blank');
   }
 
 }

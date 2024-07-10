@@ -14,31 +14,32 @@
             <div class="projeto-conten">
               <h3 class="nome" id="nome">{{Projetos.nome}}</h3>
               <p class="descricao" id="descricao">{{Projetos.descricao}}</p>
+              <div _ngcontent-gum-c21="" class="buttons-vista">
 
-<!--                  //BOTOES DEPLOY E GIT-->
-<!--              <div _ngcontent-gum-c21="" class="buttons-vista">-->
-<!--                <button _ngcontent-gum-c21="">-->
-<!--                  <a _ngcontent-gum-c21="" href="https://github.com/LucasAKuhn" target="">-->
-<!--                    <fa-icon class="ng-fa-icon button" [icon]="faGithub"></fa-icon>-->
-<!--                  </a>-->
-<!--                </button>-->
-
-<!--                <button _ngcontent-gum-c21="">-->
-<!--                  <a _ngcontent-gum-c21="" href="https://github.com/LucasAKuhn" target="">-->
-<!--                    <fa-icon class="ng-fa-icon button" [icon]="faLaptopCode"></fa-icon>-->
-<!--                  </a>-->
-<!--                </button>-->
-<!--              </div>-->
+                <!--                  //BOTOES DEPLOY E GIT-->
+                <ng-container *ngIf="Projetos.gitPage">
+                  <button _ngcontent-gum-c21="">
+                    <a _ngcontent-gum-c21="" href={{Projetos.git}} target="_blank">
+                      <fa-icon class="ng-fa-icon button" [icon]="faGithub"></fa-icon>
+                    </a>
+                  </button>
+                  <button _ngcontent-gum-c21="">
+                    <a _ngcontent-gum-c21="" href={{Projetos.gitPage}} target="_blank">
+                      <fa-icon class="ng-fa-icon button" [icon]="faLaptopCode"></fa-icon>
+                    </a>
+                  </button>
+                </ng-container>
 
 <!--                      SOMENTE BOTÃO GITHUB-->
-              <div _ngcontent-gum-c21="" class="buttons-vista">
-                <button _ngcontent-gum-c21="">
-                  <a _ngcontent-gum-c21="" href={{Projetos.git}} target="">
-                    <fa-icon class="ng-fa-icon button" [icon]="faGithub"></fa-icon>
-                  </a>
-                </button>
-              </div>
+                <ng-container *ngIf="!Projetos.gitPage">
+                  <button _ngcontent-gum-c21="">
+                    <a _ngcontent-gum-c21="" href={{Projetos.git}} target="_blank">
+                      <fa-icon class="ng-fa-icon button" [icon]="faGithub"></fa-icon>
+                    </a>
+                  </button>
+                </ng-container>
 
+              </div>
             </div>
           </div>
         </ng-template>
