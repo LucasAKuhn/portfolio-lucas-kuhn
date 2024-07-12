@@ -98,7 +98,7 @@ export class ProjetosComponent {
       // img: './assets/historyQuiz.png',
       img: './dist/portfolio-lucas-kuhn/assets/historyQuiz.png',
       git: 'https://github.com/LucasAKuhn/historyQuiz',
-
+      gitPage: 'https://lucasakuhn.github.io/historyQuiz/'
     },
   ];
 
