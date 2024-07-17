@@ -1,5 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { Projetos } from 'src/app/model/projetos';
+import { ProjetosProf } from 'src/app/model/projetos-prof';
 import SwiperCore, { Keyboard, Pagination, Navigation, Autoplay, SwiperOptions } from 'swiper';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
@@ -101,6 +102,17 @@ export class ProjetosComponent {
       gitPage: 'https://lucasakuhn.github.io/historyQuiz/'
     },
   ];
+
+  projetosProf: ProjetosProf[] = [
+    {
+      id: 1,
+      nome: 'Portfólio',
+      descricao: 'Utilizando Angular, criei um portfólio pessoal, onde apresento mais sobre mim.',
+      // img: './assets/portfolio.png',
+      img: './dist/portfolio-lucas-kuhn/assets/portfolio.png',
+      url: 'https://github.com/LucasAKuhn/portfolio-lucas-kuhn',
+    }
+];
 
   constructor() { }
 
