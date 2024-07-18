@@ -53,7 +53,8 @@
     </div>
     <div id="wrapper">
         <div id="packery" style="width: 100%; display: flex; justify-content: center; align-items: center; gap: 16px; position: relative;">
-          <div class="item" style="height: 100%; width: 40%; cursor: pointer; position: relative;">
+
+          <div class="item" (click)="goGPU()" style="height: 100%; width: 40%; cursor: pointer; position: relative;">
             <div class="filler" style="background-size: cover; inset: 0px;">
               <img src="./assets/GPU.png" alt="Banner" id="banner" class="img-fluid">
             </div>
@@ -63,6 +64,7 @@
             </div>
             <div class="overlay"></div>
           </div>
+
           <div class="item" style="height: 100%; width: 40%; cursor: pointer; position: relative;">
             <div class="filler">
               <img src="./assets/TISS.png" alt="Banner" id="banner" class="img-fluid">
@@ -73,6 +75,7 @@
             </div>
             <div class="overlay"></div>
           </div>
+
         </div>
     </div>
   </div>

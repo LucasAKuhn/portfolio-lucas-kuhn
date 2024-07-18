@@ -4,6 +4,7 @@ import { ProjetosProf } from 'src/app/model/projetos-prof';
 import SwiperCore, { Keyboard, Pagination, Navigation, Autoplay, SwiperOptions } from 'swiper';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import {Router} from "@angular/router";
 
 
 
@@ -114,8 +115,13 @@ export class ProjetosComponent {
     }
 ];
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) {
+  }
 
 
-
+  goGPU() {
+    this.router.navigate(['/gpu']);
+  }
 }
