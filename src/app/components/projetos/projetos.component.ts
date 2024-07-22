@@ -124,4 +124,8 @@ export class ProjetosComponent {
   goGPU() {
     this.router.navigate(['/gpu']);
   }
+
+  goTISS() {
+    this.router.navigate(['/tiss']);
+  }
 }
