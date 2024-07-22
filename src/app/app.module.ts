@@ -12,6 +12,7 @@ import { ProjetosComponent } from './components/projetos/projetos.component';
 import { SwiperModule } from 'swiper/angular';
 import { FooterComponent } from './components/footer/footer.component';
 import { GpuComponent } from './components/gpu/gpu.component';
+import { TissComponent } from './components/tiss/tiss.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { GpuComponent } from './components/gpu/gpu.component';
     SobreComponent,
     ProjetosComponent,
     FooterComponent,
-    GpuComponent
+    GpuComponent,
+    TissComponent
   ],
   imports: [
     BrowserModule,
