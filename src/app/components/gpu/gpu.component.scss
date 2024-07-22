@@ -1,6 +1,23 @@
-.container {
+#container {
+  width: 100vw;
   margin: 0;
+  padding: 0;
 }
+
+.imgHeader {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.full-width-image {
+  width: 100%;
+  display: block;
+  height: 50vh;
+
+}
+
+
 
 .main {
   height: auto;
@@ -9,7 +26,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto; // Centraliza a div principal na página
+  margin: 0 auto;
 }
 
 h1 {
@@ -18,7 +35,7 @@ h1 {
   line-height: 0.9em;
 }
 
-.img {
+.imgGPU {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,14 +43,14 @@ h1 {
   max-width: 100%;
 }
 
-.img img {
+.imgGPU img {
   max-width: 100%;
   height: auto;
 }
 
 p {
-  font-size: 16px;             // Define o tamanho da fonte
-  font-family: 'Raleway', sans-serif; // Define a fonte como Raleway, com fallback para sans-serif
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
   color: rgb(27, 27, 30);
   font-weight: normal;
 }
