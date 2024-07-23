@@ -1,7 +1,41 @@
 <section class="projetos" id="projetos">
+
   <div class="projetos-container-fluid">
     <div class="titulo">
-      <h2>Projetos de estudo:</h2>
+      <h2>Projetos profissionais:</h2>
+    </div>
+    <div id="wrapper">
+      <div id="packery" style="width: 100%; display: flex; justify-content: center; align-items: center; gap: 16px; position: relative;">
+
+        <div class="item" (click)="goGPU()" style="height: 100%; width: 40%; cursor: pointer; position: relative;">
+          <div class="filler" style="background-size: cover; inset: 0px;">
+            <img src="./assets/GPU.png" alt="Banner" id="banner" class="img-fluid">
+          </div>
+          <div class="details">
+            <h3 class="title">GPU</h3>
+            <div class="desc">Gestão de protocolos da Unimed</div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+
+        <div class="item" (click)="goTISS()" style="height: 100%; width: 40%; cursor: pointer; position: relative;">
+          <div class="filler">
+            <img src="./assets/TISS.png" alt="Banner" id="banner" class="img-fluid">
+          </div>
+          <div class="details">
+            <h3 class="title">TISS</h3>
+            <div class="desc">Troca de Informação de Saúde Suplementar</div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="projetos-container-fluid">
+    <div class="titulo">
+      <h2 class="proj-prof">Projetos de estudo:</h2>
     </div>
     <div class="projetos-cards-container">
       <swiper [config]="config" class="projeto_cards my-swiper my_swiper"
@@ -44,39 +78,6 @@
           </div>
         </ng-template>
       </swiper>
-    </div>
-  </div>
-
-  <div class="projetos-container-fluid">
-    <div class="titulo">
-      <h2>Projetos profissionais:</h2>
-    </div>
-    <div id="wrapper">
-        <div id="packery" style="width: 100%; display: flex; justify-content: center; align-items: center; gap: 16px; position: relative;">
-
-          <div class="item" (click)="goGPU()" style="height: 100%; width: 40%; cursor: pointer; position: relative;">
-            <div class="filler" style="background-size: cover; inset: 0px;">
-              <img src="./assets/GPU.png" alt="Banner" id="banner" class="img-fluid">
-            </div>
-            <div class="details">
-              <h3 class="title">GPU</h3>
-              <div class="desc">Gestão de protocolos da Unimed</div>
-            </div>
-            <div class="overlay"></div>
-          </div>
-
-          <div class="item" (click)="goTISS()" style="height: 100%; width: 40%; cursor: pointer; position: relative;">
-            <div class="filler">
-              <img src="./assets/TISS.png" alt="Banner" id="banner" class="img-fluid">
-            </div>
-            <div class="details">
-              <h3 class="title">TISS</h3>
-              <div class="desc">Troca de Informação de Saúde Suplementar</div>
-            </div>
-            <div class="overlay"></div>
-          </div>
-
-        </div>
     </div>
   </div>
 
