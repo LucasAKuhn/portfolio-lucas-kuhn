@@ -3,7 +3,7 @@ import { Projetos } from 'src/app/model/projetos';
 import SwiperCore, { Keyboard, Pagination, Navigation, Autoplay, SwiperOptions } from 'swiper';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
-import {Router} from "@angular/router";
+import {PortfolioComponent} from "../portfolio/portfolio.component";
 
 
 
@@ -104,17 +104,17 @@ export class ProjetosComponent {
   ];
 
   constructor(
-    private router: Router
+    private appComponent: PortfolioComponent
   ) {
   }
 
 
   goGPU() {
-    window.open('/gpu', '_blank');
+    this.appComponent.showGPU();
   }
 
   goTISS() {
-    window.open('/tiss', '_blank');
+    this.appComponent.showTISS();
   }
 
 

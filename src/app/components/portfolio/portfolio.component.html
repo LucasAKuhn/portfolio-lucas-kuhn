@@ -1,7 +1,9 @@
 <app-header></app-header>
-<app-inicio></app-inicio>
-<app-sobre></app-sobre>
-<app-projetos></app-projetos>
-<app-footer></app-footer>
 
+<app-inicio *ngIf="currentView === 'home'"></app-inicio>
+<app-sobre *ngIf="currentView === 'home'"></app-sobre>
+<app-projetos *ngIf="currentView === 'home'"></app-projetos>
+<app-footer *ngIf="currentView === 'home'"></app-footer>
 
+<app-gpu *ngIf="currentView === 'gpu'"></app-gpu>
+<app-tiss *ngIf="currentView === 'tiss'"></app-tiss>

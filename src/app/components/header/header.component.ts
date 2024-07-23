@@ -1,4 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
+import {Router} from "@angular/router";
+import {PortfolioComponent} from "../portfolio/portfolio.component";
 
 @Component({
   selector: 'app-header',
@@ -6,6 +8,11 @@ import { AfterViewInit, Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements AfterViewInit {
+
+  constructor(
+    private appComponent: PortfolioComponent
+  ) {
+  }
   ngAfterViewInit() {
     document.querySelectorAll('.nav-item').forEach(anchor => {
       anchor.addEventListener('click', (e) => {
@@ -22,4 +29,10 @@ export class HeaderComponent implements AfterViewInit {
       });
     });
   }
+
+  goHome() {
+    this.appComponent.showHome();
+  }
+
+
 }
