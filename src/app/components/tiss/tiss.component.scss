@@ -1,0 +1,58 @@
+#container {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.imgHeader {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.full-width-image {
+  width: 100%;
+  display: block;
+  height: 50vh;
+
+}
+
+.main {
+  height: auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: sans-serif;
+  line-height: 0.9em;
+}
+
+.imgGPU {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 100%;
+}
+
+.imgGPU img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(27, 27, 30);
+  font-weight: normal;
+}
+
+
+
+

@@ -122,10 +122,12 @@ export class ProjetosComponent {
 
 
   goGPU() {
-    this.router.navigate(['/gpu']);
+    window.open('/gpu', '_blank');
   }
 
   goTISS() {
-    this.router.navigate(['/tiss']);
+    window.open('/tiss', '_blank');
   }
+
+
 }
